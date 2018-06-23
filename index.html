@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Budget</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="budgetstyle.css">
+    <script type="text/javascript" src="budgetScript.js"></script>
+  </head>
+  <body>
+    <div class="w3-container w3-green">
+      <h1>Budgets!</h1>
+      <p>This is a web app by Josh Gordon</p>
+      <button id="Calculate" onclick="calc()">Calculate budget</button>
+    </div>
+    <div class="row">
+      <div class="column" style="background-color:#00AA33">
+        <button id="expenseButton" onclick="addinput('expense')">Add Expense per Month</button>
+        <p>Expenses. Input in form "name of expense : dollars per month" <br>
+        Example: potato collection : 60</p><hr>
+        <div id="expense">
+          <input type="text" id="expense0">
+        </div>
+      </div>
+      <div class="column" style="background-color:#AA3300">
+        <button id="incomeButton" onclick="addinput('income')">Add income sources</button>
+        <p>Income. Input in form of "source : pay rate : hours worked per month" <br>
+        Example: potato sales : 12.40 : 30 </p>
+        <hr>
+        <div id="income">
+          <input type="text" id="income0">
+        </div>
+      </div>
+      <div class="column" style="background-color:#0033AA">
+        <div id="result">
+          <p>Result</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-container w3-green">
+      <h1>Capitalism</h1>
+    </div>
+  </body>
+</html>
